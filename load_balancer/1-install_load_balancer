@@ -16,7 +16,7 @@ frontend gloria-frontend
         default_backend gloria-backend
 backend gloria-backend
         balance roundrobin
-        server 6143-web-01 54.196.156.33:80 check
+        server 6143-web-01 107.21.161.2:80 check
         server 6143-web-02 54.87.9.80:80 check
 "
 echo "$server_config" | sudo tee -a /etc/haproxy/haproxy.cfg
